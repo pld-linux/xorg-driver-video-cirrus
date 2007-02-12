@@ -1,5 +1,5 @@
 Summary:	X.org video driver for Cirrus Logic video chips
-Summary(pl.UTF-8):   Sterownik obrazu X.org dla układów graficznych Cirrus Logic
+Summary(pl.UTF-8):	Sterownik obrazu X.org dla układów graficznych Cirrus Logic
 Name:		xorg-driver-video-cirrus
 Version:	1.1.0
 Release:	0.1
