@@ -1,12 +1,12 @@
 Summary:	X.org video driver for Cirrus Logic video chips
 Summary(pl.UTF-8):	Sterownik obrazu X.org dla układów graficznych Cirrus Logic
 Name:		xorg-driver-video-cirrus
-Version:	1.4.0
+Version:	1.5.0
 Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-cirrus-%{version}.tar.bz2
-# Source0-md5:	1e449789da866f974dbf6cbe3c8cc7bf
+# Source0-md5:	5089429dec63c17201466901816368ec
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
@@ -54,7 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-rm -f $RPM_BUILD_ROOT%{_libdir}/xorg/modules/*/*.la
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/xorg/modules/*/*.la
 
 %clean
 rm -rf $RPM_BUILD_ROOT
